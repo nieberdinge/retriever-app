@@ -4,4 +4,10 @@ class TrainingPlanRepository {
     getTrainingPlan() {
         return new TrainingPlan(new Date(), new Date(), "monday")
     }
+
+    getPremadeTrainingPlans() {
+
+    }
 }
+
+export default TrainingPlanRepository;
