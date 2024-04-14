@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Pfitzinger's Advanced Marathoning 18/70",
+        "raceDistance": 26.2,
+        "experience": "Intermiedate",
+        "totalWeeks": 18,
+        "maxLongRun": 22,
+        "maxDaysPerWeek": 6,
+        "minDaysPerWeek": 6,
+        "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
+    },
+    {
+        "name": "Pfitzinger's Advanced Marathoning 12/70",
+        "raceDistance": 26.2,
+        "experience": "Intermiedate",
+        "totalWeeks": 12,
+        "maxLongRun": 22,
+        "maxDaysPerWeek": 6,
+        "minDaysPerWeek": 6,
+        "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
+    },
+    {
+        "name": "Pfitzinger's Advanced Marathoning 18/55",
+        "raceDistance": 26.2,
+        "experience": "Beginner",
+        "totalWeeks": 18,
+        "maxLongRun": 20,
+        "maxDaysPerWeek": 5,
+        "minDaysPerWeek": 5,
+        "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
+    },
+    {
+        "name": "Pfitzinger's Advanced Marathoning 12/55",
+        "raceDistance": 26.2,
+        "experience": "Beginner",
+        "totalWeeks": 12,
+        "maxLongRun": 20,
+        "maxDaysPerWeek": 5,
+        "minDaysPerWeek": 5,
+        "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
+    },
+    {
+        "name": "Pfitzinger's Advanced Marathoning 105/18",
+        "raceDistance": 26.2,
+        "experience": "Advanced",
+        "totalWeeks": 18,
+        "maxLongRun": 24,
+        "maxDaysPerWeek": 5,
+        "minDaysPerWeek": 5,
+        "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
+    },
+    {
+        "name": "Pfitzinger's Advanced Marathoning 105/12",
+        "raceDistance": 26.2,
+        "experience": "Advanced",
+        "totalWeeks": 12,
+        "maxLongRun": 22,
+        "maxDaysPerWeek": 7,
+        "minDaysPerWeek": 7,
+        "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
+    },
+    {
+        "name": "Pfitzinger's Advanced Marathoning 85/18",
+        "raceDistance": 26.2,
+        "experience": "Advanced",
+        "totalWeeks": 18,
+        "maxLongRun": 20,
+        "maxDaysPerWeek": 5,
+        "minDaysPerWeek": 5,
+        "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
+    },
+    {
+        "name": "Pfitzinger's Advanced Marathoning 85/12",
+        "raceDistance": 26.2,
+        "experience": "Advanced",
+        "totalWeeks": 12,
+        "maxLongRun": -1,
+        "maxDaysPerWeek": 7,
+        "minDaysPerWeek": 7,
+        "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
+    },
+    {
+        "name": "Jack Daniels Running Formual: To Finish",
+        "raceDistance": 26.2,
+        "experience": "Beginner",
+        "totalWeeks": 18,
+        "maxLongRun": -1,
+        "maxDaysPerWeek": 7,
+        "minDaysPerWeek": 3,
+        "link": "https://www.amazon.com/Daniels-Running-Formula-Jack/dp/1718203667"
+    }
+]
