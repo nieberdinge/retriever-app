@@ -9,14 +9,14 @@ const NO_CORRELATION = 0;
 
 
 
-class QuizRepository {
+export class QuizRepository {
     trainingPlanRepository: TrainingPlanRepository;
 
     constructor(traingPlanRepository: TrainingPlanRepository) {
         this.trainingPlanRepository = traingPlanRepository
     }
 
-    getQuizAnswer(quizAnswers: QuizAnswers): ScoredTrainingPlan[] {
+    getRelevantTrainingPlans(quizAnswers: QuizAnswers): ScoredTrainingPlan[] {
         const allTrainingPlans = [this.trainingPlanRepository.getPremadeTrainingPlans()];
         const scoredTrainingPlans = allTrainingPlans.map((trainingPlan) => this.scoreTrainingPlan(trainingPlan, quizAnswers))
         return scoredTrainingPlans.sort((a, b) => {
