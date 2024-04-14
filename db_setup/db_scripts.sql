@@ -1,0 +1,20 @@
+CREATE DATABASE retriever;
+
+CREATE ROLE developer; 
+GRANT ALL PRIVILEGES ON DATABASE retriever TO developer;
+
+CREATE SCHEMA users;
+GRANT ALL PRIVILEGES ON SCHEMA users TO developer;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA users TO developer;
+GRANT USAGE ON ALL SEQUENCES IN SCHEMA users TO developer;
+
+CREATE SCHEMA training_plans;
+GRANT ALL PRIVILEGES ON SCHEMA training_plans TO developer;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA training_plans TO developer;
+GRANT USAGE ON ALL SEQUENCES IN SCHEMA training_plans TO developer;
+
+
+CREATE TABLE users.user(
+    ID SERIAL PRIMARY KEY,
+    name VARCHAR(30)
+);
