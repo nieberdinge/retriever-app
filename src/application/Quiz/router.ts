@@ -6,10 +6,6 @@ const router = express.Router();
 const quizController = new QuizController()
 
 router.get('/', function (req: any, res: any, next: any) {
-    const experience = req.query.experience;
-    const totalWeeks = req.query.totalWeeks;
-    const totalMileage = req.query.totalMileage;
-    const maxLongRun = req.query.maxLongRun;
     const response = quizController.getQuizResults({
         "experience": req.query.experience,
         "totalWeeks": req.query.totalWeeks,
