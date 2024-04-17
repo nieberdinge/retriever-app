@@ -1,6 +1,6 @@
-import type TrainingPlan from "../TrainingPlan";
+import type { TrainingPlanMetadata } from "../TrainingPlans/TrainingPlanMetadata";
 
 export interface ScoredTrainingPlan {
-    trainingPlan: TrainingPlan;
+    trainingPlanMetadata: TrainingPlanMetadata;
     score: number;
 }

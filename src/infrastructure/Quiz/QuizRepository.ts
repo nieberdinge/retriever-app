@@ -1,7 +1,8 @@
-import TrainingPlan from '../../business/TrainingPlan';
+import TrainingPlan from '../../business/TrainingPlans/TrainingPlan';
 import { type ScoredTrainingPlan } from '../../business/Quiz/ScoredTrainingPlans';
 import TrainingPlanRepository from '../trainingPlanRepository'
 import type { QuizAnswers } from '../../business/Quiz/QuizAnswers';
+import type { TrainingPlanMetadata } from '../../business/TrainingPlans/TrainingPlanMetadata';
 
 const STRONG_CORRELATION = 5;
 const SLIGHT_CORRELATION = 3;
@@ -17,8 +18,8 @@ export class QuizRepository {
     }
 
     getRelevantTrainingPlans(quizAnswers: QuizAnswers): ScoredTrainingPlan[] {
-        const allTrainingPlans = [this.trainingPlanRepository.getPremadeTrainingPlans()];
-        const scoredTrainingPlans = allTrainingPlans.map((trainingPlan) => this.scoreTrainingPlan(trainingPlan, quizAnswers))
+        const allTrainingPlans = this.trainingPlanRepository.getPremadeTrainingPlans();
+        const scoredTrainingPlans = allTrainingPlans.map((trainingPlanMetadata) => this.scoreTrainingPlan(trainingPlanMetadata, quizAnswers))
         return scoredTrainingPlans.sort((a, b) => {
             if (a.score > b.score)
                 return 1;
@@ -30,14 +31,14 @@ export class QuizRepository {
 
     }
 
-    private scoreTrainingPlan(trainingPlan: TrainingPlan, quizAnswers: QuizAnswers): ScoredTrainingPlan {
+    private scoreTrainingPlan(metadata: TrainingPlanMetadata, quizAnswers: QuizAnswers): ScoredTrainingPlan {
         let score = 0;
-        score += this.scoreTotalWeeks(0, quizAnswers.totalWeeks);
-        score += this.scoreTotalMileage(0, quizAnswers.totalMileage);
-        score += this.scoreMaxLongRun(0, quizAnswers.maxLongRun);
+        score += this.scoreTotalWeeks(metadata.totalWeeks, quizAnswers.totalWeeks);
+        score += this.scoreMaxMilesPerWeek(metadata.maxMilesPerWeek, quizAnswers.totalMileage);
+        score += this.scoreMaxLongRun(metadata.maxLongRun, quizAnswers.maxLongRun);
 
         return {
-            "trainingPlan": trainingPlan,
+            "trainingPlanMetadata": metadata,
             "score": score
         } as ScoredTrainingPlan;
     }
@@ -51,7 +52,7 @@ export class QuizRepository {
         return NO_CORRELATION;
     }
 
-    private scoreTotalMileage(totalMileage: number, wantedTotalWeeks: number): number {
+    private scoreMaxMilesPerWeek(totalMileage: number, wantedTotalWeeks: number): number {
         if (totalMileage === wantedTotalWeeks)
             return STRONG_CORRELATION;
         if (totalMileage < wantedTotalWeeks + 5 || totalMileage > wantedTotalWeeks - 5) {

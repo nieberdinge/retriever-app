@@ -7,6 +7,7 @@
         "maxLongRun": 22,
         "maxDaysPerWeek": 6,
         "minDaysPerWeek": 6,
+        "maxMilesPerWeek": 70,
         "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
     },
     {
@@ -17,6 +18,7 @@
         "maxLongRun": 22,
         "maxDaysPerWeek": 6,
         "minDaysPerWeek": 6,
+        "maxMilesPerWeek": 70,
         "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
     },
     {
@@ -27,6 +29,7 @@
         "maxLongRun": 20,
         "maxDaysPerWeek": 5,
         "minDaysPerWeek": 5,
+        "maxMilesPerWeek": 55,
         "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
     },
     {
@@ -37,6 +40,7 @@
         "maxLongRun": 20,
         "maxDaysPerWeek": 5,
         "minDaysPerWeek": 5,
+        "maxMilesPerWeek": 55,
         "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
     },
     {
@@ -47,6 +51,7 @@
         "maxLongRun": 24,
         "maxDaysPerWeek": 5,
         "minDaysPerWeek": 5,
+        "maxMilesPerWeek": 105,
         "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
     },
     {
@@ -57,6 +62,7 @@
         "maxLongRun": 22,
         "maxDaysPerWeek": 7,
         "minDaysPerWeek": 7,
+        "maxMilesPerWeek": 105,
         "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
     },
     {
@@ -67,6 +73,7 @@
         "maxLongRun": 20,
         "maxDaysPerWeek": 5,
         "minDaysPerWeek": 5,
+        "maxMilesPerWeek": 85,
         "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
     },
     {
@@ -77,6 +84,7 @@
         "maxLongRun": -1,
         "maxDaysPerWeek": 7,
         "minDaysPerWeek": 7,
+        "maxMilesPerWeek": 85,
         "link": "https://www.amazon.com/Advanced-Marathoning-Pete-Pfitzinger/dp/0736074600"
     },
     {
@@ -87,6 +95,7 @@
         "maxLongRun": -1,
         "maxDaysPerWeek": 7,
         "minDaysPerWeek": 3,
+        "maxMilesPerWeek": -1,
         "link": "https://www.amazon.com/Daniels-Running-Formula-Jack/dp/1718203667"
     }
 ]
