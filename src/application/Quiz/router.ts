@@ -1,9 +1,10 @@
 import express from 'express';
 import { QuizController } from './controller';
+import { quizRepository } from '../dependency';
 
 const router = express.Router();
 
-const quizController = new QuizController()
+const quizController = new QuizController(quizRepository)
 
 router.get('/', function (req: any, res: any, next: any) {
     const response = quizController.getQuizResults({
