@@ -1,11 +1,13 @@
 import express from 'express';
+import cors from 'cors';
 import trainingPlanRouter from './trainingPlan/traningPlan';
 import PostgresAdapter from '../infrastructure/postgresAdapter';
 import { quizRouter } from './Quiz/router';
+
 const app = express()
 const v1 = express.Router()
 
-
+app.use(cors({ origin: "http://localhost:3000" }))
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 v1.use('/trainingPlan', trainingPlanRouter)
