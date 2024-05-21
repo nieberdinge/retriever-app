@@ -3,11 +3,14 @@ import trainingPlanRouter from './trainingPlan/traningPlan';
 import PostgresAdapter from '../infrastructure/postgresAdapter';
 import { quizRouter } from './Quiz/router';
 const app = express()
+const v1 = express.Router()
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/trainingPlan', trainingPlanRouter)
-app.use('/quiz', quizRouter)
+v1.use('/trainingPlan', trainingPlanRouter)
+v1.use('/quiz', quizRouter)
+app.use('/v1', v1)
 
 const port = 3001
 
