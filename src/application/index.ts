@@ -15,9 +15,10 @@ app.get("/health", (req: any, res: any) => {
     const postgresAdapter = new PostgresAdapter()
     postgresAdapter.healthCheck().then((result) => {
         if (result) {
-            res.send("Healthy!")
+            console.log("application is healthy");
+            res.status(200).send("Healthy!");
         }
-        res.send("Application can not connect to postgres")
+        res.send("Application can not connect to postgres");
     }
 
     )
